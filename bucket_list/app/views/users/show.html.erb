@@ -1,0 +1,45 @@
+
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
+<hr>
+
+<div class="mainpro profile">
+current lists for <%= @user.name%> <br>
+
+  <div class="buck-list">
+    <% @lists.each do |list| %>
+      <a class="list-title small" href="<%=list.id%>"><b><%= list.title %></b></a><br>
+    <% end %>
+    <div><a class="add-list-button" href="#">Create a new list</a></div>
+  </div>
+
+</div>
+
+
+
+<h4 class="list-title" id="list-title"></h4>
+<div class="mainpro current-list" id="current-list">
+
+</div>
+</div>
+
+<script id="item-template" type="text/x-handlebars-template">
+  {{#each item}}
+    <div id="item{{id}}" class="{{class_name}}">
+
+    <div class="item-left">
+      <b>{{title}}</b><br>
+     <p>{{content}}</p>
+    </div>
+    <div class="item-right">
+      <button id="accomplish{{id}}" class="accomplished-button" action="{{id}}">accomplished!</button>
+      <button id="edit{{id}}" class="edit-button" action="{{id}}">EDIT</button>
+      <button id="delete{{id}}" class="delete-button" action="{{id}}">DELETE</button>
+    </div>
+    </div>
+  {{/each}}
+</script>
+
+

@@ -1,0 +1,101 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.list-title{
+  text-decoration: none;
+}
+
+.item{
+  background-color: #FF0000;
+  margin: 2%;
+  width: 90%;
+  padding: 2%;
+  border-radius: 100px;
+  color: white;
+  box-shadow: 10px 10px 5px #610B0B;
+}
+
+.add-item{
+  background-color: yellow;
+  text-align: center;
+}
+
+.item-accomplished{
+  background-color: #3B0B0B;
+  box-shadow: 1px 1px 1px #610B0B;
+
+}
+
+.list-title{
+  font-size: 100px;
+  font-weight: 40px;
+  text-align: center;
+}
+
+.small{
+  font-size: 40px;
+}
+item-left{
+  position: relative;
+  float: left;
+}
+
+item-right{
+  position: relative;
+  float: right;
+}
+
+.current-list-container{
+  background-color: yellow;
+  height: 50%;
+}
+
+.add-list-button{
+
+}
+
+.mainpro {
+  background-color: #A9D0F5;
+  border-style: solid;
+  border-color: red;
+  margin: 2%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+.profile{
+  float: left;
+  width: 30%;
+  font-size: 25px;
+  line-height: 40px;
+
+
+
+}
+
+.current-list{
+  position: absolute;
+  float: right;
+  width: 60%;
+  font-size: 25px;
+  line-height: 40px;
+  height: 900px;
+  overflow: scroll;
+  right: 2%;
+  bottom: 2%;
+}
+
+
+.indie-list{
+  background-color: red;
+  width: 50%;
+}
+
+.item-list{
+  background-color: yellow;
+  border-radius: 5px;
+  margin: 2%;
+  border-color: black;
+  border-style: solid;
+}
